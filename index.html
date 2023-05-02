@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Current WEATHER</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="header-logo">Current weather</a>
+                <div class="search">
+                    <input type="search" name="search" id="search" value="" placeholder="Search">
+                    <input type="button" id="search-btn" value="">
+                </div>
+            </div><!-- ./header-inner -->
+        </div><!-- ./container -->
+    </header>
+    <section class="weather">
+        <div class="container">
+            <div class="weather-inner">
+                <div class="weather_now">
+                    <div class="weather_now_top">
+                        <h3 id="city"></h3>
+                        <h3 id="date"></h3>
+                    </div>
+                    <div class="weather_now_body">
+                        <div class="now_body_left">
+                            <span id="weather-now"></span>
+                            <div id="now_body_left_icon"></div>
+                            <div id="now_body_left_temp"></div>
+                        </div>
+                        <table class="now_body_right">
+                            <tr>
+                                <td class="clr-secondary">Мінімальна температура</td>
+                                <td id="now_body_right_min" class=""></td>
+                            </tr>
+                            <tr>
+                                <td class="clr-secondary">Максимальна температура</td>
+                                <td id="now_body_right_max" class=""></td>
+                            </tr>
+                            <tr>
+                                <td class="clr-secondary">Швидкість вітру</td>
+                                <td id="now_body_right_wind" class=""></td>
+                            </tr>
+                        </table><!-- ./now_body_right -->
+                    </div><!-- ./weather_now_body -->
+                </div><!-- ./weather_now -->
+                <div class="weather_forecast">
+                    <h3>Hourly</h3>
+                    <div id="weather_forecast_body">
+                        <ul class="forecast_bar">
+                            <li>Forecast</li>
+                            <li>Temp</li>
+                            <li>Wind</li>
+                        </ul>
+                    </div>
+                </div><!-- ./weather_forecast -->
+                <div class="error-window">
+                    <div>404</div>
+                    NOT FOUND<br><br>
+                    Please enter a different city
+                </div>
+            </div><!-- ./weather-inner -->
+        </div><!-- ./container -->
+    </section><!-- ./weather -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="assets/scripts/script.js"></script>
+</body>
+</html>
